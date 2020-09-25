@@ -1,15 +1,15 @@
 //
-//  AppDelegate.h
-//  LightBurst
+//  GameAppDelegate.h
+//  LightsOut
 //
-//  Created by Bart Dority on 9/21/20.
+//  Created by Bart Dority on 5/8/13.
+//  Copyright (c) 2013 Bart Dority. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import "Game.h"   // our model object
 
-
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface GameAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
@@ -29,4 +29,3 @@
 -(void) createNewModel;
 
 @end
-

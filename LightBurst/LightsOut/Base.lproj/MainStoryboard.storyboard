@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="Oqd-rY-0Oj">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game Win View Controller-->
+        <scene sceneID="ym2-uo-YfM">
+            <objects>
+                <viewController id="9fH-1f-5kI" customClass="GameWinViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4b1-BY-fPK"/>
+                        <viewControllerLayoutGuide type="bottom" id="4s8-XG-1Ne"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VGV-SG-zQh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iRo-0I-3mM"/>
+                    <connections>
+                        <segue destination="2" kind="modal" identifier="PlaySegue" modalTransitionStyle="crossDissolve" id="LgM-O7-50M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IlA-08-pE7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2112" y="607"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="x0k-fd-2ke">
+            <objects>
+                <viewController id="KBZ-9f-ieD" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NTM-tQ-HvE"/>
+                        <viewControllerLayoutGuide type="bottom" id="lLk-kV-FLA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kkJ-ef-cMC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="2" kind="modal" identifier="GameSegue" modalTransitionStyle="crossDissolve" id="3Ux-J3-qFf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bly-Jx-GpB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1106" y="-392"/>
+        </scene>
+        <!--Welcome View Controller-->
+        <scene sceneID="nIx-hp-K7F">
+            <objects>
+                <viewController id="Oqd-rY-0Oj" customClass="WelcomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="scC-vQ-Yf9"/>
+                        <viewControllerLayoutGuide type="bottom" id="p36-m9-76f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DqG-1v-Jhe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="STARBURST" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eog-CF-f2g">
+                                <rect key="frame" x="0.0" y="20" width="414" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="94" id="W5e-Dq-9oO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.5841730812" green="0.73672889009999998" blue="0.95266661350000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eog-CF-f2g" firstAttribute="trailing" secondItem="DqG-1v-Jhe" secondAttribute="trailing" id="Chh-yB-XBA"/>
+                            <constraint firstItem="eog-CF-f2g" firstAttribute="top" secondItem="DqG-1v-Jhe" secondAttribute="top" constant="20" symbolic="YES" id="Pmc-LT-z7I"/>
+                            <constraint firstItem="eog-CF-f2g" firstAttribute="leading" secondItem="DqG-1v-Jhe" secondAttribute="leading" id="elU-SC-5de"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="2" kind="modal" identifier="FirstSegue" modalTransitionStyle="crossDissolve" id="6CY-va-Tbb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GE0-n4-F6H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3233" y="-747"/>
+        </scene>
+        <!--Info Controller-->
+        <scene sceneID="Ede-nn-jcf">
+            <objects>
+                <viewController id="kB8-By-1S1" customClass="InfoController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gYD-tn-gjf"/>
+                        <viewControllerLayoutGuide type="bottom" id="WHH-vs-OvV"/>
+                    </layoutGuides>
+                    <view key="view" clipsSubviews="YES" contentMode="top" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" id="z2Z-1p-aTI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="2" kind="modal" identifier="GameSegue2" id="Rig-qt-q8j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ric-Jf-PjB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-881" y="-1608"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="GameViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZwG-KF-eqk"/>
+                        <viewControllerLayoutGuide type="bottom" id="NW1-ZD-ses"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="DrY-EA-FwZ" appends="YES" id="jYS-cz-ANH"/>
+                            <outletCollection property="gestureRecognizers" destination="LE3-0r-pui" appends="YES" id="2rk-6g-10w"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="swipeGR" destination="DrY-EA-FwZ" id="7BI-sw-F7D"/>
+                        <segue destination="9fH-1f-5kI" kind="modal" identifier="WinSegue" modalTransitionStyle="crossDissolve" id="qk0-eZ-5J9"/>
+                        <segue destination="KBZ-9f-ieD" kind="modal" identifier="SettingsSegue" modalTransitionStyle="crossDissolve" id="ydJ-Ot-8nz"/>
+                        <segue destination="Oqd-rY-0Oj" kind="modal" identifier="welcomeBackSegue" modalTransitionStyle="crossDissolve" id="UP3-9u-hjf"/>
+                        <segue destination="kB8-By-1S1" kind="modal" identifier="info" id="RWy-l5-1YX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="JqE-4j-jG9">
+                    <connections>
+                        <action selector="tileHit:" destination="2" id="z52-ci-7Af"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="DrY-EA-FwZ">
+                    <connections>
+                        <action selector="swipeMe:" destination="2" id="QGv-8s-9wS"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <rotationGestureRecognizer id="LE3-0r-pui">
+                    <connections>
+                        <action selector="rotateMe:" destination="2" id="kew-bh-gZn"/>
+                    </connections>
+                </rotationGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-2445" y="-1962"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="6CY-va-Tbb"/>
+    </inferredMetricsTieBreakers>
+</document>
