@@ -184,6 +184,11 @@
 		F4519F97255613BA00B3AEB1 /* graphics */ = {
 			isa = PBXGroup;
 			children = (
+				F44A999E251D6D0B004802DA /* info.png */,
+				F44A999B251D6D0B004802DA /* info5.jpg */,
+				F44A999F251D6D0B004802DA /* info4.jpg */,
+				F44A999C251D6D0B004802DA /* info3.jpg */,
+				F44A9995251D6D0A004802DA /* info2.jpg */,
 				F44A998F251D6D0A004802DA /* info1@2x.jpg */,
 				F44A9994251D6D0A004802DA /* info1.jpg */,
 			);
@@ -243,12 +248,7 @@
 				F4FE8457251E6D0800CF34F3 /* ViewControllers */,
 				F44A9990251D6D0A004802DA /* highlighted.png */,
 				F44A9998251D6D0B004802DA /* info_restart.jpg */,
-				F44A999E251D6D0B004802DA /* info.png */,
 				F4519F97255613BA00B3AEB1 /* graphics */,
-				F44A9995251D6D0A004802DA /* info2.jpg */,
-				F44A999C251D6D0B004802DA /* info3.jpg */,
-				F44A999F251D6D0B004802DA /* info4.jpg */,
-				F44A999B251D6D0B004802DA /* info5.jpg */,
 				F44A998E251D6D0A004802DA /* instructions3.jpg */,
 				F44A99A1251D6D0B004802DA /* leftselected.png */,
 				F44A99A0251D6D0B004802DA /* newgame.png */,

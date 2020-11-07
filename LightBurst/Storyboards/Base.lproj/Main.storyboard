@@ -18,7 +18,7 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
-                        <segue destination="OKo-v1-lYD" kind="show" identifier="PlaySegue" id="Q7c-od-E4Z"/>
+                        <segue destination="OKo-v1-lYD" kind="presentation" identifier="PlaySegue" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="Q7c-od-E4Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EgZ-7D-ejm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -49,14 +49,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2521.875" y="-373.35285505124449"/>
+            <point key="canvasLocation" x="2312" y="-389"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="u9f-w1-Phb">
             <objects>
                 <viewController storyboardIdentifier="GameViewController" id="OKo-v1-lYD" customClass="GameViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dO4-I4-o6g">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Uh8-Hr-j61"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -65,53 +65,53 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <segue destination="fmX-uZ-nh5" kind="show" identifier="info" id="aFA-e5-Wcc"/>
-                        <segue destination="Mvm-8e-JqY" kind="presentation" identifier="SettingsSegue" id="L3m-c5-8U0"/>
+                        <segue destination="fmX-uZ-nh5" kind="presentation" identifier="info" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="aFA-e5-Wcc"/>
+                        <segue destination="Mvm-8e-JqY" kind="presentation" identifier="SettingsSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="L3m-c5-8U0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sGA-uA-qnv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3279" y="-252"/>
+            <point key="canvasLocation" x="3157" y="-256"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="XRx-Vc-EfQ">
             <objects>
                 <viewController id="Mvm-8e-JqY" customClass="SettingsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vQ5-IP-TCp">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="hQf-jL-wfg"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
-                        <segue destination="OKo-v1-lYD" kind="show" identifier="GameSegue" id="H0X-Jr-vVj"/>
+                        <segue destination="OKo-v1-lYD" kind="presentation" identifier="GameSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="H0X-Jr-vVj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="seG-IO-kIn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4056" y="-292"/>
+            <point key="canvasLocation" x="4197" y="-328"/>
         </scene>
         <!--Info View Controller-->
         <scene sceneID="hNT-Zr-RWt">
             <objects>
                 <viewController id="fmX-uZ-nh5" customClass="InfoViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rAh-sD-uau">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="2To-oA-u10"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="hjt-DO-cJN"/>
                     <connections>
-                        <segue destination="OKo-v1-lYD" kind="show" identifier="GameSegue2" id="KJK-WQ-aGG"/>
+                        <segue destination="OKo-v1-lYD" kind="presentation" identifier="GameSegue2" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="KJK-WQ-aGG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uqq-cK-3ay" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4056" y="-1071"/>
+            <point key="canvasLocation" x="3868" y="-1056"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="H0X-Jr-vVj"/>
+        <segue reference="KJK-WQ-aGG"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -421,6 +421,7 @@
 
 -(void) showInfo
 {
+    
     [self performSegueWithIdentifier:@"info" sender:self];
 }
 
@@ -577,6 +578,7 @@
 
     UIAlertAction *ok = [UIAlertAction actionWithTitle:@"Yes" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                             //button click event
+        [self createNewGame];
                         }];
     UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"No" style:UIAlertActionStyleCancel handler:nil];
     [alert addAction:cancel];
@@ -595,16 +597,16 @@
 }
 
 
-- (void)alertView:(UIAlertController *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex;
-{
-    if (alertView == self.GameAlert)
-    {
-        if (buttonIndex == 1)
-        {
-            [self createNewGame];
-        }
-    }
-}
+//- (void)alertView:(UIAlertController *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex;
+//{
+//    if (alertView == self.GameAlert)
+//    {
+//        if (buttonIndex == 1)
+//        {
+//            [self createNewGame];
+//        }
+//    }
+//}
 
 
 // -------Collection View Data Source Methods-------------------------
