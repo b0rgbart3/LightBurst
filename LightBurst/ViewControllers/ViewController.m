@@ -110,7 +110,6 @@
 
    /* CGRect JewelFrame = CGRectMake(position2,tiletop+tilesize,tilesize,tilesize);
     
-
     jewelButton *jb = [[jewelButton alloc] initWithFrame:tile5Frame];
     jb.myColor = tileColor;
     
@@ -127,7 +126,6 @@
         self.play.alpha = 1;
     }];
     
-
     [jb fadeIn];*/
     
     
@@ -152,6 +150,4 @@
 }
 
 @end
-
-
 

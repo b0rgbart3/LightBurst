@@ -24,4 +24,3 @@
 @property Jewel *jewel;
 
 @end
-

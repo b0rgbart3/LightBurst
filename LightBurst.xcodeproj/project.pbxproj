@@ -44,9 +44,10 @@
 		F44A99B7251D6D0B004802DA /* newgame.png in Resources */ = {isa = PBXBuildFile; fileRef = F44A99A0251D6D0B004802DA /* newgame.png */; };
 		F44A99B8251D6D0B004802DA /* leftselected.png in Resources */ = {isa = PBXBuildFile; fileRef = F44A99A1251D6D0B004802DA /* leftselected.png */; };
 		F44A99B9251D6D0B004802DA /* normal.png in Resources */ = {isa = PBXBuildFile; fileRef = F44A99A2251D6D0B004802DA /* normal.png */; };
+		F4519F9F2556226900B3AEB1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4519F9E2556226900B3AEB1 /* ViewController.m */; };
+		F4519FA3255623BC00B3AEB1 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4519FA2255623BC00B3AEB1 /* InfoViewController.m */; };
 		F463E85625195A16008B03AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F463E85525195A16008B03AA /* AppDelegate.m */; };
 		F463E85925195A16008B03AA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F463E85825195A16008B03AA /* SceneDelegate.m */; };
-		F463E85C25195A16008B03AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F463E85B25195A16008B03AA /* ViewController.m */; };
 		F463E85F25195A16008B03AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F463E85D25195A16008B03AA /* Main.storyboard */; };
 		F463E86125195A17008B03AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F463E86025195A17008B03AA /* Assets.xcassets */; };
 		F463E86425195A17008B03AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F463E86225195A17008B03AA /* LaunchScreen.storyboard */; };
@@ -124,13 +125,15 @@
 		F44A99A0251D6D0B004802DA /* newgame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newgame.png; sourceTree = "<group>"; };
 		F44A99A1251D6D0B004802DA /* leftselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftselected.png; sourceTree = "<group>"; };
 		F44A99A2251D6D0B004802DA /* normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = normal.png; sourceTree = "<group>"; };
+		F4519F9D2556226900B3AEB1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F4519F9E2556226900B3AEB1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F4519FA1255623BC00B3AEB1 /* InfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		F4519FA2255623BC00B3AEB1 /* InfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 		F463E85125195A16008B03AA /* LightBurst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightBurst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F463E85425195A16008B03AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F463E85525195A16008B03AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F463E85725195A16008B03AA /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		F463E85825195A16008B03AA /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		F463E85A25195A16008B03AA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F463E85B25195A16008B03AA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F463E85E25195A16008B03AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F463E86025195A17008B03AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F463E86325195A17008B03AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -178,6 +181,22 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		F4519F97255613BA00B3AEB1 /* graphics */ = {
+			isa = PBXGroup;
+			children = (
+				F44A998F251D6D0A004802DA /* info1@2x.jpg */,
+				F44A9994251D6D0A004802DA /* info1.jpg */,
+			);
+			path = graphics;
+			sourceTree = "<group>";
+		};
+		F4519F992556189600B3AEB1 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
 		F463E84825195A16008B03AA = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +216,7 @@
 		F463E85325195A16008B03AA /* LightBurst */ = {
 			isa = PBXGroup;
 			children = (
+				F4519F992556189600B3AEB1 /* Info */,
 				F463E85425195A16008B03AA /* AppDelegate.h */,
 				F463E85525195A16008B03AA /* AppDelegate.m */,
 				F408398F2519A490006F62B9 /* containerView.m */,
@@ -224,8 +244,7 @@
 				F44A9990251D6D0A004802DA /* highlighted.png */,
 				F44A9998251D6D0B004802DA /* info_restart.jpg */,
 				F44A999E251D6D0B004802DA /* info.png */,
-				F44A9994251D6D0A004802DA /* info1.jpg */,
-				F44A998F251D6D0A004802DA /* info1@2x.jpg */,
+				F4519F97255613BA00B3AEB1 /* graphics */,
 				F44A9995251D6D0A004802DA /* info2.jpg */,
 				F44A999C251D6D0B004802DA /* info3.jpg */,
 				F44A999F251D6D0B004802DA /* info4.jpg */,
@@ -292,8 +311,10 @@
 				F408397525199215006F62B9 /* GameViewController.m */,
 				F40839882519A361006F62B9 /* SettingsViewController.h */,
 				F40839852519A351006F62B9 /* SettingsViewController.m */,
-				F463E85A25195A16008B03AA /* ViewController.h */,
-				F463E85B25195A16008B03AA /* ViewController.m */,
+				F4519F9D2556226900B3AEB1 /* ViewController.h */,
+				F4519F9E2556226900B3AEB1 /* ViewController.m */,
+				F4519FA1255623BC00B3AEB1 /* InfoViewController.h */,
+				F4519FA2255623BC00B3AEB1 /* InfoViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -412,11 +433,11 @@
 				F4FE845A251E6D5800CF34F3 /* GameWinViewController.m in Sources */,
 				F4083950251966ED006F62B9 /* Game.m in Sources */,
 				F408398C2519A410006F62B9 /* panelView.m in Sources */,
-				F463E85C25195A16008B03AA /* ViewController.m in Sources */,
 				F40839962519A574006F62B9 /* TileBurst.m in Sources */,
 				F463E85625195A16008B03AA /* AppDelegate.m in Sources */,
 				F40839812519A2C6006F62B9 /* TileCell.m in Sources */,
 				F408397625199215006F62B9 /* GameViewController.m in Sources */,
+				F4519F9F2556226900B3AEB1 /* ViewController.m in Sources */,
 				F408396125197D2E006F62B9 /* JewelButton.m in Sources */,
 				F40839902519A490006F62B9 /* containerView.m in Sources */,
 				F408399B2519A5FD006F62B9 /* panelBox.m in Sources */,
@@ -426,6 +447,7 @@
 				F408395D25197C77006F62B9 /* Jewel.m in Sources */,
 				F408395325196768006F62B9 /* Persistence.m in Sources */,
 				F4083972251983F2006F62B9 /* TileView.m in Sources */,
+				F4519FA3255623BC00B3AEB1 /* InfoViewController.m in Sources */,
 				F40839862519A351006F62B9 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
