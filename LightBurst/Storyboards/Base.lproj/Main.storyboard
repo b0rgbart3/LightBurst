@@ -66,11 +66,30 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="fmX-uZ-nh5" kind="show" identifier="info" id="aFA-e5-Wcc"/>
+                        <segue destination="Mvm-8e-JqY" kind="presentation" identifier="SettingsSegue" id="L3m-c5-8U0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sGA-uA-qnv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3247" y="-351"/>
+            <point key="canvasLocation" x="3279" y="-252"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="XRx-Vc-EfQ">
+            <objects>
+                <viewController id="Mvm-8e-JqY" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vQ5-IP-TCp">
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="hQf-jL-wfg"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <segue destination="OKo-v1-lYD" kind="show" identifier="GameSegue" id="H0X-Jr-vVj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="seG-IO-kIn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4056" y="-292"/>
         </scene>
         <!--Info View Controller-->
         <scene sceneID="hNT-Zr-RWt">
@@ -93,6 +112,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="KJK-WQ-aGG"/>
+        <segue reference="H0X-Jr-vVj"/>
     </inferredMetricsTieBreakers>
 </document>

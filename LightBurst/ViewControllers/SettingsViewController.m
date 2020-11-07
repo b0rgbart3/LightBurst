@@ -452,19 +452,66 @@
 {
  
     
-//    if ((self.newMatrixSize != self.model.rowCount) || (self.newSequenceLength != self.model.sequenceLength))
-//    {
-//        self.GameAlert= [[UIAlertView alloc] initWithTitle:@"NewGame" message:self.warningString delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil];
-//        [self.GameAlert addButtonWithTitle:@"OK"];
-//
-//        [self.GameAlert show];
-//    }
-//    else
-//    {
-//        self.model.color = self.newColorValue;
-//        self.appDelegate.color = self.model.color;
-//        [self proceedBackToGame];
-//    }
+       
+       if ((self.newMatrixSize != self.model.rowCount) || (self.newSequenceLength != self.model.sequenceLength))
+       {
+           
+           
+           
+           
+           
+           UIAlertController * alert = [UIAlertController
+                           alertControllerWithTitle:@"Start a New Game"
+                                            message:@"The settings you changed require a new game to be started."
+                                     preferredStyle:UIAlertControllerStyleAlert];
+
+
+
+           UIAlertAction* yesButton = [UIAlertAction
+                               actionWithTitle:@"OK"
+                                         style:UIAlertActionStyleDefault
+                                       handler:^(UIAlertAction * action) {
+                                           //Handle your yes please button action here
+               
+               
+               self.appDelegate.matrixSize = self.newMatrixSize;
+               self.appDelegate.sequenceLength = self.newSequenceLength;
+               self.model.color = self.newColorValue;
+               self.appDelegate.color = self.model.color;
+               
+               self.model = nil;
+               self.appDelegate.model = nil;
+               
+               self.appDelegate.needNewModel = YES;
+               
+               [self.appDelegate createNewModel];
+               [self proceedBackToGame];
+                                       }];
+
+           UIAlertAction* noButton = [UIAlertAction
+                                   actionWithTitle:@"Cancel"
+                                             style:UIAlertActionStyleDefault
+                                           handler:^(UIAlertAction * action) {
+                                              //Handle no, thanks button
+               // otherwise just pass the old one back (it might have a new color)
+               self.appDelegate.model = self.model;
+               [self.appDelegate saveGame];
+               [self proceedBackToGame];
+                                           }];
+
+           [alert addAction:yesButton];
+           [alert addAction:noButton];
+
+           [self presentViewController:alert animated:YES completion:nil];
+           
+       
+    }
+    else
+    {
+        self.model.color = self.newColorValue;
+        self.appDelegate.color = self.model.color;
+        [self proceedBackToGame];
+    }
 }
 
 -(void) proceedBackToGame
