@@ -15,12 +15,14 @@
 
 @implementation AppDelegate
 
+
 -(void) saveGame
 {
     //NSLog(@"Saving the game.");
     self.matrixSize = self.model.columnCount;
     self.sequenceLength = self.model.sequenceLength;
     self.color = self.model.color;
+    
     
     [Persistence saveObject: self.model withFileName:@"LightsOut_Model"];
     
@@ -62,11 +64,18 @@
     self.matrixSize = INITIAL_BOARD_SIZE;
     self.sequenceLength = INITIAL_SEQUENCE_LENGTH;
     self.color = INITIAL_COLOR;
+
     
     [self loadGame];
     return YES;
 }
 
+-(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+// Return YES for supported orientations
+// return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+    return NO;
+}
 
 #pragma mark - UISceneSession lifecycle
 

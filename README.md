@@ -1,5 +1,5 @@
 # LightBurst
-A graphic puzzle game written in Objective C for the iPhone, iPad, and any iOS device, available on the AppStore.
+A graphic puzzle game written in Objective C for the iPhone, iPad, and any iOS device, currently being reviewed by and soon to be available on the AppStore.
 
 
 ![screenshot.jpg](screenshot.jpg)
