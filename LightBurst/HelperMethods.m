@@ -43,7 +43,7 @@
     StandardButton *button;
 
     button = [[StandardButton alloc] initWithFrame:frame];
-    UIFont *buttonFont = [UIFont boldSystemFontOfSize: (int) width /4];
+    UIFont *buttonFont = [UIFont boldSystemFontOfSize: (int) height * .3 ];
 
     NSAttributedString *buttonAttributedString;
     NSDictionary *attributes = @{ NSFontAttributeName: buttonFont, NSForegroundColorAttributeName: [UIColor whiteColor]};
@@ -56,6 +56,25 @@
 }
 
 +(UILabel *) createALabel: (NSString *) string ofSize: (float) labelSize withFrame:(CGRect)labelFrame
+{
+    UILabel *newLabel = [[UILabel alloc] initWithFrame:labelFrame];
+    UIFont *labelFont = [UIFont boldSystemFontOfSize:(CGFloat) (labelSize*.5)];
+    NSAttributedString *labelAttributedString;
+    NSDictionary *attributes = @{ NSFontAttributeName: labelFont, NSForegroundColorAttributeName: [UIColor whiteColor],
+                                 
+    };
+    labelAttributedString = [[NSAttributedString alloc] initWithString:string attributes:attributes];
+    
+    UIColor *transparentColor = [[UIColor alloc] initWithRed:0 green:0 blue:0 alpha:0];
+    
+    [newLabel setAttributedText:labelAttributedString];
+    
+    [newLabel setBackgroundColor:transparentColor];
+    return newLabel;
+    
+}
+
++(UILabel *) createATitle: (NSString *) string ofSize: (float) labelSize withFrame:(CGRect)labelFrame
 {
     UILabel *newLabel = [[UILabel alloc] initWithFrame:labelFrame];
     UIFont *labelFont = [UIFont boldSystemFontOfSize:(CGFloat) labelSize];
@@ -73,6 +92,5 @@
     return newLabel;
     
 }
-
 
 @end

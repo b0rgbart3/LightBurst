@@ -112,6 +112,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="aFA-e5-Wcc"/>
         <segue reference="KJK-WQ-aGG"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -122,7 +122,12 @@
     float buttonHorizontalPosition4 = centerX + (margin*1.5) + pngButtonSize;
 
     UIColor *myTransparentColor = [[UIColor alloc] initWithRed:1 green:1 blue:1 alpha:0];
-    UIFont *touchesLabelFont = [UIFont boldSystemFontOfSize:16];
+    
+    float fontsize = screenWidth*.05;
+    if (fontsize < 18) {
+        fontsize = 18;
+    }
+    UIFont *touchesLabelFont = [UIFont boldSystemFontOfSize:fontsize];
 
     // This is the main GAME PLAY AREA
     self.myLayout = [[UICollectionViewFlowLayout alloc] init];
@@ -161,9 +166,17 @@
     
     
     // This is the 'more-info' button (with the question mark graphic)
-    CGRect infoViewBounds = CGRectMake((pngButtonSize*.15),divider + (pngButtonSize*.15), pngButtonSize,subPanelHeight);
-    CGRect infoButtonBounds = CGRectMake(0, 0, pngButtonSize, subPanelHeight);
-    CGRect infoImageBounds = CGRectMake(pngButtonSize*.2, 0, subPanelHeight, subPanelHeight);
+    CGRect infoViewBounds = CGRectMake(buttonHorizontalPosition1,divider+ (subPanelHeight*.1), pngButtonSize*.75,subPanelHeight);
+    CGFloat infoWidth = pngButtonSize*.75;
+    CGFloat infoHeight = subPanelHeight;
+    
+    if (infoWidth > infoHeight) {
+        infoWidth = infoHeight;
+    }
+    
+    CGRect infoButtonBounds = CGRectMake(0, 0, infoWidth, infoHeight);
+    CGRect infoImageBounds = CGRectMake(0, 0, infoWidth, infoHeight);
+    
     UIView *infoView = [[UIView alloc] initWithFrame:infoViewBounds];
     StandardButton *infoButton = [[StandardButton alloc] initWithFrame:infoButtonBounds];
     UIImage *infoImage = [UIImage imageNamed:@"info.png"];
@@ -215,18 +228,18 @@
 //     The burst graphic displays how many times the user has touched a tile....
     UIImageView *burstGraphic;
     CGRect burstRect;
-    burstRect = CGRectMake(screenWidth*.6, divider, subPanelHeight, subPanelHeight);
+    burstRect = CGRectMake(buttonHorizontalPosition3, divider + (pngButtonSize*.1), pngButtonSize*.5, subPanelHeight);
     burstGraphic = [[UIImageView alloc] initWithFrame:burstRect];
     UIImage *touchImage = [UIImage imageNamed:@"touch.png"];
     [burstGraphic setImage:touchImage];
     [self.view addSubview:burstGraphic];
 
-    CGRect touchesRect = CGRectMake(burstRect.origin.x+burstRect.size.width, divider, subPanelHeight, subPanelHeight);
+    CGRect touchesRect = CGRectMake(burstRect.origin.x+ (burstRect.size.width*1.12), divider + (pngButtonSize*.05), subPanelHeight, subPanelHeight);
     _touchesLabel = [[UILabel alloc] initWithFrame:touchesRect];
     [_touchesLabel setTextColor:_color10];
     [_touchesLabel setText:@"0"];
     [_touchesLabel setTextAlignment:NSTextAlignmentLeft];
-   // [_touchesLabel setFont:_touchesLabel];
+    [_touchesLabel setFont: touchesLabelFont ];
     [_touchesLabel setBackgroundColor:myTransparentColor];
     [self.view addSubview:_touchesLabel];
 
@@ -234,14 +247,14 @@
     // The tile graphic displays how long the game's original sequence is......
     UIImageView *tileGraphic;
     CGRect tileRect;
-    tileRect = CGRectMake(screenWidth*.8, divider, subPanelHeight, subPanelHeight);
+    tileRect = CGRectMake(buttonHorizontalPosition4, (divider + pngButtonSize*.1), pngButtonSize*.6, pngButtonSize*.6);
     tileGraphic = [[UIImageView alloc] initWithFrame:tileRect];
     UIImage *tileImage = [UIImage imageNamed:@"tile_icon.png"];
     [tileGraphic setImage:tileImage];
     [self.view addSubview:tileGraphic];
 
-    CGRect tilesRect = CGRectMake(tileRect.origin.x + tileRect.size.width+(margin/2),divider, subPanelHeight, subPanelHeight);
-    _tilesLabel = [[UILabel alloc] initWithFrame:tilesRect];
+    CGRect tilesLabelRect = CGRectMake(tileRect.origin.x + (pngButtonSize*.7),divider + (pngButtonSize*.05), subPanelHeight, subPanelHeight);
+    _tilesLabel = [[UILabel alloc] initWithFrame:tilesLabelRect];
     [_tilesLabel setTextColor:_color10];
     [_tilesLabel setText:@"23"];
     [_tilesLabel setTextAlignment:NSTextAlignmentLeft];
@@ -597,16 +610,16 @@
 }
 
 
-//- (void)alertView:(UIAlertController *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex;
-//{
-//    if (alertView == self.GameAlert)
-//    {
-//        if (buttonIndex == 1)
-//        {
-//            [self createNewGame];
-//        }
-//    }
-//}
+- (void)alertView:(UIAlertController *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex;
+{
+    if (alertView == self.GameAlert)
+    {
+        if (buttonIndex == 1)
+        {
+            [self createNewGame];
+        }
+    }
+}
 
 
 // -------Collection View Data Source Methods-------------------------

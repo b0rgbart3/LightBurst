@@ -97,8 +97,8 @@
     float tinySize = titleLabelSize *.75;
     float rightX = (self.view.frame.size.width * .95) - buttonWidth;
     float leftX = self.view.frame.size.width * .05;
-    float subTitleVerticalOffset = boxHeight * .7;
-    float threeQuartersWidth = self.view.frame.size.width*.85;
+    float subTitleVerticalOffset = boxHeight * .8;
+    float threeQuartersWidth = self.view.frame.size.width*.8;
     
     UIButton *button;
     
@@ -136,7 +136,7 @@
     CGRect gameColorLabelFrame = CGRectMake(leftPosition, verticalPosition1 + verticalMargin, basicWidth /2, titleLabelSize);
     CGRect cSliderFrame = CGRectMake(leftPosition, verticalPosition1+sliderVerticalOffset, basicWidth, labelHeight);
    
-    self.gameColorLabel = [HelperMethods createALabel:@"Game Color:" ofSize:titleLabelSize withFrame:gameColorLabelFrame];
+    self.gameColorLabel = [HelperMethods createATitle:@"Game Color:" ofSize:titleLabelSize withFrame:gameColorLabelFrame];
     [self.view addSubview:self.gameColorLabel];
     
     // Allocate the slider control and set it's target action method
@@ -158,9 +158,9 @@
     CGRect numberOfTilesLabelFrame = CGRectMake(0, verticalPosition2 + subTitleVerticalOffset, threeQuartersWidth, labelHeight);
     CGRect numberOfTilesValueLabelFrame = CGRectMake(threeQuartersWidth, verticalPosition2 + subTitleVerticalOffset, valueNumberSize*3, valueNumberSize);
     
-    self.matrixSizeLabel = [HelperMethods createALabel:@"Matrix Size:" ofSize:titleLabelSize withFrame:matrixSizeLabelFrame];
+    self.matrixSizeLabel = [HelperMethods createATitle:@"Matrix Size:" ofSize:titleLabelSize withFrame:matrixSizeLabelFrame];
     [self.view addSubview:self.matrixSizeLabel];
-    self.numberOfTilesLabel = [HelperMethods createALabel:@"Number of Tiles:" ofSize:subTitleLabelSize withFrame:numberOfTilesLabelFrame];
+    self.numberOfTilesLabel = [HelperMethods createATitle:@"Number of Tiles:" ofSize:subTitleLabelSize withFrame:numberOfTilesLabelFrame];
     [self.numberOfTilesLabel setTextAlignment:NSTextAlignmentRight];
     [self.view addSubview:self.numberOfTilesLabel];
     
@@ -237,20 +237,20 @@
     CGRect hardLabelFrame = CGRectMake(0, difficultySliderFrame.origin.y + difficultySliderFrame.size.height, difficultySliderFrame.origin.x + difficultySliderFrame.size.width, labelHeight*.8);
     
     
-    self.difficultyLabel = [HelperMethods createALabel:@"Difficulty:" ofSize:titleLabelSize withFrame:difficultyLabelFrame];
+    self.difficultyLabel = [HelperMethods createATitle:@"Difficulty:" ofSize:titleLabelSize withFrame:difficultyLabelFrame];
     [self.view addSubview:self.difficultyLabel];
     
-    self.sequenceLengthLabel = [HelperMethods createALabel:@"Sequence Length:" ofSize:subTitleLabelSize withFrame:sequenceLengthLabelFrame];
+    self.sequenceLengthLabel = [HelperMethods createATitle:@"Sequence Length:" ofSize:subTitleLabelSize withFrame:sequenceLengthLabelFrame];
     [self.sequenceLengthLabel setTextAlignment:NSTextAlignmentRight];
     [self.view addSubview:self.sequenceLengthLabel];
     
     self.sequenceLengthValueLabel = [HelperMethods createALabel:@"0" ofSize:valueNumberSize withFrame:sequenceLengthValueLabelFrame];
     [self.view addSubview:self.sequenceLengthValueLabel];
     
-    self.easyLabel = [HelperMethods createALabel:@"easy" ofSize:tinySize withFrame:easyLabelFrame];
+    self.easyLabel = [HelperMethods createATitle:@"easy" ofSize:tinySize withFrame:easyLabelFrame];
     [self.easyLabel setAlpha:.35];
     [self.view addSubview:self.easyLabel];
-    self.hardLabel = [HelperMethods createALabel:@"hard" ofSize:tinySize withFrame:hardLabelFrame];
+    self.hardLabel = [HelperMethods createATitle:@"hard" ofSize:tinySize withFrame:hardLabelFrame];
     [self.hardLabel setAlpha:.35];
     [self.hardLabel setTextAlignment:NSTextAlignmentRight];
     [self.view addSubview:self.hardLabel];
@@ -268,7 +268,7 @@
     // Finally, create the ok and cancel buttons at the bottom of the screen.
     // ---------------------------------------------------------------------------------------------------------------------
     
-    // Accept
+    //
     button = [HelperMethods createAButton: @"Accept" at:rightX and:buttonVerticalOrigin ofWidth: buttonWidth andHeight: buttonHeight];
     [button addTarget:self action:@selector(playButtonHit) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
@@ -365,7 +365,15 @@
     
     // Update the interface
     
-    UIFont *labelFont = [UIFont boldSystemFontOfSize:self.view.frame.size.width *.07];
+    CGFloat fontsize = self.view.frame.size.width *.07;
+    if (fontsize < 24) {
+        fontsize = 24;
+    }
+    if (fontsize > 30) {
+        fontsize = 30;
+    }
+    
+    UIFont *labelFont = [UIFont boldSystemFontOfSize: fontsize];
     NSAttributedString *sLValueAttributedString;
     NSDictionary *attributes = @{ NSFontAttributeName: labelFont, NSForegroundColorAttributeName: [UIColor whiteColor]};
     NSString *string = [NSString stringWithFormat:@" %d", (int) self.newSequenceLength];
@@ -398,7 +406,17 @@
 -(void)changeMyMatrixSize {
     self.newMatrixSize = (int) 8 * self.matrixSlider.value + 4;
     //self.matrixSizeControl.selectedSegmentIndex + MATRIX_CONTROL_OFFSET;
-    UIFont *labelFont = [UIFont boldSystemFontOfSize:self.view.frame.size.width *.07];
+    
+    CGFloat fontsize = self.view.frame.size.width *.07;
+    if (fontsize < 24) {
+        fontsize = 24;
+    }
+    if (fontsize > 30) {
+        fontsize = 30;
+    }
+    
+    
+    UIFont *labelFont = [UIFont boldSystemFontOfSize:fontsize];
     NSAttributedString *sLValueAttributedString;
     NSDictionary *attributes = @{ NSFontAttributeName: labelFont, NSForegroundColorAttributeName: [UIColor whiteColor]};
     NSString *string = [NSString stringWithFormat:@" %d", (int) self.newMatrixSize];

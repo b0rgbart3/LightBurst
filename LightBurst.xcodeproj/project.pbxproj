@@ -46,6 +46,18 @@
 		F44A99B9251D6D0B004802DA /* normal.png in Resources */ = {isa = PBXBuildFile; fileRef = F44A99A2251D6D0B004802DA /* normal.png */; };
 		F4519F9F2556226900B3AEB1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4519F9E2556226900B3AEB1 /* ViewController.m */; };
 		F4519FA3255623BC00B3AEB1 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4519FA2255623BC00B3AEB1 /* InfoViewController.m */; };
+		F4519FB0255A5CCC00B3AEB1 /* lightBurstIcon_40.png in Resources */ = {isa = PBXBuildFile; fileRef = F4519FA6255A5CCB00B3AEB1 /* lightBurstIcon_40.png */; };
+		F4519FB1255A5CCC00B3AEB1 /* lightBurstIcon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = F4519FA7255A5CCB00B3AEB1 /* lightBurstIcon_57.png */; };
+		F4519FB2255A5CCC00B3AEB1 /* lightBurstIcon_1024.png in Resources */ = {isa = PBXBuildFile; fileRef = F4519FA8255A5CCB00B3AEB1 /* lightBurstIcon_1024.png */; };
+		F4519FB3255A5CCC00B3AEB1 /* lightBurstIcon_87.png in Resources */ = {isa = PBXBuildFile; fileRef = F4519FA9255A5CCC00B3AEB1 /* lightBurstIcon_87.png */; };
+		F4519FB4255A5CCC00B3AEB1 /* lightBurstIcon_167.png in Resources */ = {isa = PBXBuildFile; fileRef = F4519FAA255A5CCC00B3AEB1 /* lightBurstIcon_167.png */; };
+		F4519FB5255A5CCC00B3AEB1 /* lightBurstIcon_152.png in Resources */ = {isa = PBXBuildFile; fileRef = F4519FAB255A5CCC00B3AEB1 /* lightBurstIcon_152.png */; };
+		F4519FB6255A5CCC00B3AEB1 /* lightBurstIcon_180.png in Resources */ = {isa = PBXBuildFile; fileRef = F4519FAC255A5CCC00B3AEB1 /* lightBurstIcon_180.png */; };
+		F4519FB7255A5CCC00B3AEB1 /* lightBurstIcon_80.png in Resources */ = {isa = PBXBuildFile; fileRef = F4519FAD255A5CCC00B3AEB1 /* lightBurstIcon_80.png */; };
+		F4519FB8255A5CCC00B3AEB1 /* lightBurstIcon_120.png in Resources */ = {isa = PBXBuildFile; fileRef = F4519FAE255A5CCC00B3AEB1 /* lightBurstIcon_120.png */; };
+		F4519FB9255A5CCC00B3AEB1 /* lightBurstIcon_60.png in Resources */ = {isa = PBXBuildFile; fileRef = F4519FAF255A5CCC00B3AEB1 /* lightBurstIcon_60.png */; };
+		F4519FBC255A5E4F00B3AEB1 /* lightBurstIcon_58.png in Resources */ = {isa = PBXBuildFile; fileRef = F4519FBB255A5E4F00B3AEB1 /* lightBurstIcon_58.png */; };
+		F4519FBF255A5EE800B3AEB1 /* lightBurstIcon_76.png in Resources */ = {isa = PBXBuildFile; fileRef = F4519FBE255A5EE800B3AEB1 /* lightBurstIcon_76.png */; };
 		F463E85625195A16008B03AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F463E85525195A16008B03AA /* AppDelegate.m */; };
 		F463E85925195A16008B03AA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F463E85825195A16008B03AA /* SceneDelegate.m */; };
 		F463E85F25195A16008B03AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F463E85D25195A16008B03AA /* Main.storyboard */; };
@@ -129,6 +141,18 @@
 		F4519F9E2556226900B3AEB1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F4519FA1255623BC00B3AEB1 /* InfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
 		F4519FA2255623BC00B3AEB1 /* InfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		F4519FA6255A5CCB00B3AEB1 /* lightBurstIcon_40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightBurstIcon_40.png; sourceTree = "<group>"; };
+		F4519FA7255A5CCB00B3AEB1 /* lightBurstIcon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightBurstIcon_57.png; sourceTree = "<group>"; };
+		F4519FA8255A5CCB00B3AEB1 /* lightBurstIcon_1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightBurstIcon_1024.png; sourceTree = "<group>"; };
+		F4519FA9255A5CCC00B3AEB1 /* lightBurstIcon_87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightBurstIcon_87.png; sourceTree = "<group>"; };
+		F4519FAA255A5CCC00B3AEB1 /* lightBurstIcon_167.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightBurstIcon_167.png; sourceTree = "<group>"; };
+		F4519FAB255A5CCC00B3AEB1 /* lightBurstIcon_152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightBurstIcon_152.png; sourceTree = "<group>"; };
+		F4519FAC255A5CCC00B3AEB1 /* lightBurstIcon_180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightBurstIcon_180.png; sourceTree = "<group>"; };
+		F4519FAD255A5CCC00B3AEB1 /* lightBurstIcon_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightBurstIcon_80.png; sourceTree = "<group>"; };
+		F4519FAE255A5CCC00B3AEB1 /* lightBurstIcon_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightBurstIcon_120.png; sourceTree = "<group>"; };
+		F4519FAF255A5CCC00B3AEB1 /* lightBurstIcon_60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightBurstIcon_60.png; sourceTree = "<group>"; };
+		F4519FBB255A5E4F00B3AEB1 /* lightBurstIcon_58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lightBurstIcon_58.png; path = Icons/lightBurstIcon_58.png; sourceTree = "<group>"; };
+		F4519FBE255A5EE800B3AEB1 /* lightBurstIcon_76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightBurstIcon_76.png; sourceTree = "<group>"; };
 		F463E85125195A16008B03AA /* LightBurst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightBurst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F463E85425195A16008B03AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F463E85525195A16008B03AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -272,6 +296,7 @@
 				F4083970251983C9006F62B9 /* TileView.h */,
 				F4083971251983F2006F62B9 /* TileView.m */,
 				F463E86025195A17008B03AA /* Assets.xcassets */,
+				F4519FBB255A5E4F00B3AEB1 /* lightBurstIcon_58.png */,
 				F463E89725195DE8008B03AA /* Icons */,
 			);
 			path = LightBurst;
@@ -280,6 +305,17 @@
 		F463E89725195DE8008B03AA /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				F4519FBE255A5EE800B3AEB1 /* lightBurstIcon_76.png */,
+				F4519FA6255A5CCB00B3AEB1 /* lightBurstIcon_40.png */,
+				F4519FA7255A5CCB00B3AEB1 /* lightBurstIcon_57.png */,
+				F4519FAF255A5CCC00B3AEB1 /* lightBurstIcon_60.png */,
+				F4519FAD255A5CCC00B3AEB1 /* lightBurstIcon_80.png */,
+				F4519FA9255A5CCC00B3AEB1 /* lightBurstIcon_87.png */,
+				F4519FAE255A5CCC00B3AEB1 /* lightBurstIcon_120.png */,
+				F4519FAB255A5CCC00B3AEB1 /* lightBurstIcon_152.png */,
+				F4519FAA255A5CCC00B3AEB1 /* lightBurstIcon_167.png */,
+				F4519FAC255A5CCC00B3AEB1 /* lightBurstIcon_180.png */,
+				F4519FA8255A5CCB00B3AEB1 /* lightBurstIcon_1024.png */,
 				F463E87C25195D73008B03AA /* icon20.png */,
 				F463E88025195D74008B03AA /* icon29.png */,
 				F463E87725195D73008B03AA /* icon40-1.png */,
@@ -375,6 +411,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4519FB2255A5CCC00B3AEB1 /* lightBurstIcon_1024.png in Resources */,
 				F463E88525195D74008B03AA /* icon120-1.png in Resources */,
 				F463E89125195D74008B03AA /* icon80.png in Resources */,
 				F44A99A8251D6D0B004802DA /* noneselected.png in Resources */,
@@ -389,6 +426,7 @@
 				F463E88C25195D74008B03AA /* icon80-1.png in Resources */,
 				F463E88725195D74008B03AA /* icon1024.png in Resources */,
 				F463E89425195D74008B03AA /* icon120.png in Resources */,
+				F4519FB5255A5CCC00B3AEB1 /* lightBurstIcon_152.png in Resources */,
 				F44A99AF251D6D0B004802DA /* info_restart.jpg in Resources */,
 				F44A99B3251D6D0B004802DA /* info3.jpg in Resources */,
 				F463E89025195D74008B03AA /* icon87.png in Resources */,
@@ -397,17 +435,27 @@
 				F44A99AA251D6D0B004802DA /* solution.png in Resources */,
 				F463E86425195A17008B03AA /* LaunchScreen.storyboard in Resources */,
 				F44A99B7251D6D0B004802DA /* newgame.png in Resources */,
+				F4519FB3255A5CCC00B3AEB1 /* lightBurstIcon_87.png in Resources */,
 				F44A99B0251D6D0B004802DA /* plain_button.png in Resources */,
 				F44A99AD251D6D0B004802DA /* settings.png in Resources */,
 				F463E86125195A17008B03AA /* Assets.xcassets in Resources */,
+				F4519FBC255A5E4F00B3AEB1 /* lightBurstIcon_58.png in Resources */,
+				F4519FBF255A5EE800B3AEB1 /* lightBurstIcon_76.png in Resources */,
+				F4519FB8255A5CCC00B3AEB1 /* lightBurstIcon_120.png in Resources */,
 				F463E85F25195A16008B03AA /* Main.storyboard in Resources */,
 				F463E88925195D74008B03AA /* icon40-1.png in Resources */,
 				F44A99AC251D6D0B004802DA /* info2.jpg in Resources */,
 				F44A99B6251D6D0B004802DA /* info4.jpg in Resources */,
+				F4519FB0255A5CCC00B3AEB1 /* lightBurstIcon_40.png in Resources */,
+				F4519FB6255A5CCC00B3AEB1 /* lightBurstIcon_180.png in Resources */,
+				F4519FB4255A5CCC00B3AEB1 /* lightBurstIcon_167.png in Resources */,
 				F44A99A7251D6D0B004802DA /* highlighted.png in Resources */,
 				F44A99B8251D6D0B004802DA /* leftselected.png in Resources */,
+				F4519FB9255A5CCC00B3AEB1 /* lightBurstIcon_60.png in Resources */,
+				F4519FB1255A5CCC00B3AEB1 /* lightBurstIcon_57.png in Resources */,
 				F44A99A5251D6D0B004802DA /* instructions3.jpg in Resources */,
 				F463E88425195D74008B03AA /* icon40-2.png in Resources */,
+				F4519FB7255A5CCC00B3AEB1 /* lightBurstIcon_80.png in Resources */,
 				F44A99AE251D6D0B004802DA /* tile_icon.png in Resources */,
 				F463E88D25195D74008B03AA /* icon167.png in Resources */,
 				F44A99B5251D6D0B004802DA /* info.png in Resources */,

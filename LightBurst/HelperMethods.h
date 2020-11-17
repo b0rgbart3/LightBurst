@@ -33,7 +33,7 @@
 
 +(UILabel *) createALabel: (NSString *) string ofSize: (float) labelSize withFrame:(CGRect)labelFrame;
 
-
++(UILabel *) createATitle: (NSString *) string ofSize: (float) labelSize withFrame:(CGRect)labelFrame;
 
 @end
 

@@ -43,7 +43,7 @@
     
     float currentY = labelFrame.origin.y + labelFrame.size.height + largeTextSize;
     //float fullWidth = self.view.frame.size.width;
-    float labelHeight = largeTextSize*.8;
+    float labelHeight = largeTextSize;
     
     [label1 setTextAlignment:NSTextAlignmentCenter];
     [label1 setFont:infoBoldFont];
@@ -92,10 +92,10 @@
 
 -(void) createAndDisplayAScoreValueLabel: (NSString*)displayString atY: (float) verticalPosition
 {
-    UIFont *basicFont = [UIFont boldSystemFontOfSize:15];
+    UIFont *basicFont = [UIFont boldSystemFontOfSize:22];
     UIColor *myWhite = [UIColor whiteColor];
     
-    CGRect displayFrame = CGRectMake(self.view.frame.size.width*.6,verticalPosition,self.view.frame.size.width*.3,20);
+    CGRect displayFrame = CGRectMake(self.view.frame.size.width*.65,verticalPosition,self.view.frame.size.width*.3,36);
     UILabel *displayLabel = [[UILabel alloc] initWithFrame:displayFrame];
     [displayLabel setFont:basicFont];
     [displayLabel setTextColor:myWhite];
@@ -109,10 +109,10 @@
 
 -(void) createAndDisplayAScoreLabel: (NSString*)displayString atY: (float) verticalPosition
 {
-    UIFont *basicFont = [UIFont boldSystemFontOfSize:15];
+    UIFont *basicFont = [UIFont boldSystemFontOfSize:22];
     UIColor *myWhite = [UIColor whiteColor];
     
-    CGRect displayFrame = CGRectMake(0,verticalPosition,self.view.frame.size.width*.5,20);
+    CGRect displayFrame = CGRectMake(self.view.frame.size.width*.1,verticalPosition,self.view.frame.size.width*.5,36);
     UILabel *displayLabel = [[UILabel alloc] initWithFrame:displayFrame];
     [displayLabel setFont:basicFont];
     [displayLabel setTextColor:myWhite];

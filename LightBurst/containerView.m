@@ -29,18 +29,31 @@
     
     self = [super initWithFrame:frame];
     if (self) {
-        CGPoint buttonOrigin = {10,0};
+        CGPoint buttonOrigin = {0,0};
         CGSize buttonSize = {size,size};
         CGRect buttonFrame = {buttonOrigin, buttonSize};
         
-        CGPoint labelOrigin = {0, size};
-        CGSize labelSize = {size+20, 20};
-        CGRect labelFrame = {labelOrigin,labelSize};
+        CGPoint labelOrigin = {(0-(size*.2)), (size*1.1)};
+        
+        CGSize labelSize = {size*1.5, 30};
+        CGRect labelFrame = {labelOrigin ,labelSize};
         
         
         _myButton = [[StandardButton alloc] initWithFrame:buttonFrame];
        
-        UIFont *buttonFont = [UIFont boldSystemFontOfSize:14];
+        CGRect screenRect = [[UIScreen mainScreen] bounds];
+        CGFloat screenWidth = screenRect.size.width;
+        // CGFloat screenHeight = screenRect.size.height;
+        
+        float fontsize = screenWidth*.03;
+        if (fontsize < 11) {
+            fontsize = 11;
+        }
+        if (fontsize > 30) {
+            fontsize = 30;
+        }
+        
+        UIFont *buttonFont = [UIFont boldSystemFontOfSize:fontsize];
         NSAttributedString *buttonAttributedString;
         NSDictionary *attributes = @{ NSFontAttributeName: buttonFont,      NSForegroundColorAttributeName: [UIColor whiteColor]};
         buttonAttributedString = [[NSAttributedString alloc] initWithString:label attributes:attributes];
