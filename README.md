@@ -72,6 +72,8 @@ The number next to the gray tile shows the length of the sequence that you are c
 ![info5.jpg](info5.jpg)  
 Pressing the screen with two fingers and rotating, will rotate the board in that same direction.  Sometimes the board is easier to solve if you can change the orientation.
 
+![settings_panel.png](settings_panel.png)  
+The Settings panel allows you to change the color of the game screen, the size of the matrix (a minimum of 4x4 or a max of 11x11), and the length of the sequence.  The larger the matrix, and the longer the sequence, the more challenging the puzzle is to solve.
 
 
 <a name="Rights"></a>
