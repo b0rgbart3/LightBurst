@@ -1,5 +1,6 @@
 # LightBurst
-A graphic puzzle game written in Objective C for the iPhone and iPad.
+A graphic puzzle game written in Objective C for the iPhone, iPad, and any iOS device, available on the AppStore.
+
 
 ![screenshot.jpg](screenshot.jpg)
 
@@ -9,6 +10,7 @@ A graphic puzzle game written in Objective C for the iPhone and iPad.
 3. [Live Demo](#Live_Demo) -->
 1. [Features](#Features)
 2. [Technology](#Technology)
+3. [Usage Rights & Copyright](#Rights)
 <!-- 3. [User Story](#User_Story)
 4. [Contributors](#Contributors)
 5. [Badges](#Badges) -->
@@ -41,8 +43,9 @@ X-Code
 As an avid reader, I want to be able to store my own list of books that are available on Google Books, and then be able to easily access them at a later date.
 ``` -->
 
-
-
+<a name="Rights"></a>
+## Usage Rights
+All Rights reserved.  © Copyright 2020 by Bart Dority.
 
 **on github:** <a href='github.com/b0rgBart3'>b0rgBart3</a>
 
