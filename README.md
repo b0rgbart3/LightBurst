@@ -52,24 +52,24 @@ The game board consists of a grid of tiles.  When the game starts, a sequence of
 
 ![touch.jpg](touch.jpg)
 
-![reset.jpg](reset.jpg)
+![reset.jpg](reset.jpg)  
 If you get stuck and want to try again, this button will restart the current game with the original set of lights switched on, so you can try again from the begining.
 
 
-![key.jpg](key.jpg)
+![key.jpg](key.jpg)  
 If you get stuck and need help, pressing this button will show you the set of tiles that you need to press to get to the solution.  Note however that using this hint will greatly reduce your final score.
 
 
-![settings.jpg](settings.jpg)
+![settings.jpg](settings.jpg)  
 This button will bring up the settings control panel, which will allow you to change the color of the display, the number of tiles in the display, or increase the length of the sequene to make the game more challenging.
 
 
-![info4.jpg](info4.jpg)
+![info4.jpg](info4.jpg)  
 The number next to the LightBurst graphic shows the number of moves you have currently made in this game.  
 The number next to the gray tile shows the length of the sequence that you are currently trying to solve.
 
 
-![info5.jpg](info5.jpg)
+![info5.jpg](info5.jpg)  
 Pressing the screen with two fingers and rotating, will rotate the board in that same direction.  Sometimes the board is easier to solve if you can change the orientation.
 
 
